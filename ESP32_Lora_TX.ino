@@ -46,7 +46,7 @@ void setup() {
   Serial.println("LoRa Iniciado correctamente");
 
   // Configuración avanzada LoRa
-  LoRa.setTxPower(0.0001, PA_OUTPUT_PA_BOOST_PIN); // 20 dBm = 100 mW
+  LoRa.setTxPower(20, PA_OUTPUT_PA_BOOST_PIN); // 20 dBm = 100 mW
   LoRa.setSpreadingFactor(12);
   LoRa.setSignalBandwidth(125E3);
   LoRa.setCodingRate4(8);
